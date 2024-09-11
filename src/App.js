@@ -8,19 +8,23 @@ function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
+
     setIsSidebarOpen(!isSidebarOpen);
   };
 
   return (
     <div className="App">
-      <Header toggleSidebar={toggleSidebar} />
+    
       <div className="container">
-        <Sidebar isSidebarOpen={isSidebarOpen} />
+     
         <MainContent />
+       
+
       </div>
     </div>
   );
 }
 
 export default App;
+
 
